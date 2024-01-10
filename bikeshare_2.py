@@ -180,7 +180,7 @@ def user_stats(df):
         print('\nCounts of males and females using the service:')
         print(gender.to_string())
     except:
-        print('\nNo gender data to display')
+        print('\nNo gender data to display.')
 
     # Display earliest, most recent, and most common year of birth
     #add try statement to handle missing data fields
@@ -192,7 +192,7 @@ def user_stats(df):
         print('\nThe most recent birth year is {}.'.format(int(young)))
         print('\nThe most common birth year is {}.'.format(int(most_common)))
     except:
-        print('\nNo birth data to display')
+        print('\nNo birth data to display.')
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
